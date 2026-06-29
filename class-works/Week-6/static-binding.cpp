@@ -28,6 +28,7 @@ int main(){
     r->show();
     r=new african;
     r->show();
+    delete r;
     return 0;
 
 }
