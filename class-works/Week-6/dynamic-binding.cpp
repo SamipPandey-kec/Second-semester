@@ -8,10 +8,10 @@ class race{
     race(){
         cout<<"base class constructor"<<endl;
         }
-    void virtual show(){
+    virtual void show(){
         cout<<"human"<<endl;
     }
-    ~race(){
+    virtual ~race(){
         cout<<"base class destructor"<<endl;
     }
 };
@@ -32,12 +32,17 @@ class african:public race{
     void show(){
         cout<<"african"<<endl;
     }
+    ~african(){
+        cout<<"african class destructor"<<endl;
+    }
 };
 int main(){
     race *r=new race;
     r->show();
+    delete r;
     r=new asian;
     r->show();
+    delete r;
     r=new african;
     r->show();
     delete r;
