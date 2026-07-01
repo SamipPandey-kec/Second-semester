@@ -14,6 +14,7 @@ class publication{
         virtual void print(){
             cout<<"Title: "<<title<<endl;
         }
+        ~publication(){}
 };
 
 class book:public publication{
@@ -25,6 +26,7 @@ class book:public publication{
             publication::print();
             cout<<"Accession Number: "<<accession_number<<endl;
         }
+        ~book(){}
 };
 class magazine:public publication{
     protected:
@@ -35,6 +37,7 @@ class magazine:public publication{
             publication::print();
             cout<<"Volume Number: "<<volume_number<<endl;
         }
+        ~magazine(){}
 };
 class journal:public book,public magazine{
     public:
@@ -43,6 +46,7 @@ class journal:public book,public magazine{
             book::print();
             magazine::print();
         }
+        ~journal(){}
 };
 int main(){
     journal ieeeoop("IEEE OOP",681.3,1);
