@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 class Developer;
+class Manager;
 
 class Employee{
     string name;
