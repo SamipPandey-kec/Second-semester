@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+class Developer;
 
 class Employee{
     string name;
@@ -8,6 +9,12 @@ class Employee{
     virtual ~Employee(){}
 
 
+};
+class Developer:public Employee{
+    int id;
+    public:
+    Developer(string name=" ",int id=0):Employee(name),id(id){}
+    ~Developer(){}
 };
 
 class Manager:public Employee{
@@ -26,5 +33,13 @@ int main(){
     else{
         cout<<"Dynamic cast failed"<<endl;
     }
+    Developer* d = dynamic_cast<Developer*>(e1);
+    if(d!=nullptr){
+        cout<<"Dynamic cast successful"<<endl;
+    }
+    else{
+        cout<<"Dynamic cast failed"<<endl;
+    }
+    cout<<typeid(*e1).name()<<endl;
     return 0;
 }
