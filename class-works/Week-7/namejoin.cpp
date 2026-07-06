@@ -4,50 +4,61 @@
 #include<cstring>
 using namespace std;
 
-class fname{
+class lname;
+class fname;
+
+void operator+(const fname &f, const lname &l);
+
+class fname {
     char * first;
 
     public:
-        fname(char * f){
+        fname(const char * f) {
             first = new char[strlen(f) + 1];
             strcpy(first, f);
         }
-        ~fname(){
+        ~fname() {
             delete[] first;
         }
+        friend void operator+(const fname &f, const lname &l);
 };
 
-class lname{
+class lname {
     char * last;
 
     public:
-        lname(char * l){
+        lname(const char * l) {
             last = new char[strlen(l) + 1];
             strcpy(last, l);
         }
-        ~lname(){
+        ~lname() {
             delete[] last;
         }
+        friend void operator+(const fname &f, const lname &l);
 };
 
-int main(){
+void operator+(const fname &f, const lname &l) {
+    char * fullName = new char[strlen(f.first) + strlen(l.last) + 2]; 
+    strcpy(fullName, f.first);
+    strcat(fullName, " ");
+    strcat(fullName, l.last);
+    
+    cout << "Full Name is: " << fullName << endl;
+    
+    delete[] fullName;
+}
+
+int main() {
     char f[20], l[20];
-    cout<<"Enter first name: ";
-    cin>>f;
-    cout<<"Enter last name: ";
-    cin>>l;
+    cout << "Enter first name: ";
+    cin >> f;
+    cout << "Enter last name: ";
+    cin >> l;
 
     fname first(f);
     lname last(l);
 
-    char * fullName = new char[strlen(f) + strlen(l) + 2]; 
-    strcpy(fullName, f);
-    strcat(fullName, " ");
-    strcat(fullName, l);
-
-    cout<<"Full Name: "<<fullName<<endl;
-
-    delete[] fullName;
+    first + last; 
 
     return 0;
 }
