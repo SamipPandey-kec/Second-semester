@@ -33,12 +33,14 @@ class batsman:public Cricketer{
     int run;
     int centuries;
     public:
-        batsman(string n="", int a=0, int m=0, int r=0, int c=0):Cricketer(n,a,m), run(r), centuries(c){}
+        batsman(string n="", int a=0, int m=0, int r=0):Cricketer(n,a,m), run(r), centuries((int)(r/100)){
+            if(r < 100) centuries = 0;
+        }
         ~batsman(){}
 
         void display(){
             cout<<endl;
-        cout<<setw(20)<<this->name<<setw(20)<<this->age<<setw(10)<<this->matches<<setw(10)<<this->run<<setw(10)<<this->centuries<<setw(10);
+        cout<<setw(20)<<this->name<<setw(20)<<this->age<<setw(10)<<this->matches<<setw(10)<<" "<<setw(10)<<this->run<<setw(10)<<this->centuries<<setw(10);
         }
  
 
@@ -46,7 +48,7 @@ class batsman:public Cricketer{
 
 int main(){
     cout<<setw(20)<<"Name"<<setw(20)<<"Age"<<setw(10)<<"Matches"<<setw(10)<<"Wickets"<<setw(10)<<"Runs"<<setw(10)<<"Centuries"<<setw(10)<<endl;
-    Cricketer *b= new batsman("Virat Kohli", 34, 254, 12040, 43);
+    Cricketer *b= new batsman("Virat Kohli", 34, 254, 12040);
 
     Cricketer *bo= new bowler("Jasprit Bumrah", 27, 67, 108);
 
