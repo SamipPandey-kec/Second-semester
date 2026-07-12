@@ -17,10 +17,16 @@ int main() {
         divide(x,y);
        
     }
-    catch (float ex) {
-       
-        cout << "Cannot divide by 0" << endl;
+
+    catch(float x){
+        cout<<"CAnnot diviede by zero"<<endl;
     }
+
+
+    catch(...){
+        cout<<"cannnot divide by zero"<<endl;
+    }
+
 
     return 0;
 }
