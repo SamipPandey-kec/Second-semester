@@ -30,22 +30,27 @@ The labs are organized sequentially by topic/week:
 
 ```text
 |
++---Assignments
+|   +---Questions
+|   |       Overload-usingMemberFunction.cpp
+|   |       Overload-usingMemberFunction.exe
+|   |       Overloading-usingFriendFunction.cpp
+|   |       Overloading-usingFriendFunction.exe
+|   |
+|   \---Tutorials
+|       \---Tutorial-1
+|               Qn1.txt
+|               Qn2.cpp
+|               Qn2.exe
+|               Qn3.cpp
+|               Qn3.exe
+|               Qn4.txt
+|
 +---class-works
-|   +---Assignments
-|   |   +---Questions
-|   |   |       Overload-usingMemberFunction.cpp
-|   |   |       Overload-usingMemberFunction.exe
-|   |   |       Overloading-usingFriendFunction.cpp
-|   |   |       Overloading-usingFriendFunction.exe
-|   |   |
-|   |   \---Tutorials
-|   |       \---Tutorial-1
-|   |               Qn1.txt
-|   |               Qn2.cpp
-|   |               Qn2.exe
-|   |               Qn3.cpp
-|   |               Qn3.exe
-|   |               Qn4.txt
+|   +---.vscode
+|   |       c_cpp_properties.json
+|   |       launch.json
+|   |       settings.json
 |   |
 |   +---Week-1
 |   |       Default_argument.cpp
@@ -67,47 +72,110 @@ The labs are organized sequentially by topic/week:
 |   |       uniquepointer.cpp
 |   |       weight.cpp
 |   |
-|   \---Week-4
-|           operatordefine.cpp
-|           timeOperatordefine.cpp
-|           typeconversion.cpp
-|           typeconversionclass.cpp
-|           xor.cpp
+|   +---Week-4
+|   |       operatordefine.cpp
+|   |       timeOperatordefine.cpp
+|   |       typeconversion.cpp
+|   |       typeconversionclass.cpp
+|   |       xor.cpp
+|   |
+|   +---Week-5
+|   |       employee.cpp
+|   |       inheritance.cpp
+|   |       inheritance.exe
+|   |       MoneyConversion.cpp
+|   |       MoneyConversion.exe
+|   |       name.cpp
+|   |       name.exe
+|   |       Question.cpp
+|   |       Question.exe
+|   |       sourceClass.cpp
+|   |       user.cpp
+|   |       user.exe
+|   |
+|   +---Week-6
+|   |       Binding.exe
+|   |       dynamic-binding.cpp
+|   |       dynamic-binding.exe
+|   |       shape.cpp
+|   |       shape.exe
+|   |       static-binding.cpp
+|   |       user.cpp
+|   |       user.exe
+|   |
+|   +---Week-7
+|   |       crickter.cpp
+|   |       crickter.exe
+|   |       dynamic_casting.cpp
+|   |       namejoin.cpp
+|   |       namejoin.exe
+|   |       RTTI.exe
+|   |
+|   \---Week-8
+|           class-stack.cpp
+|           class-stack.exe
+|           distance.cpp
+|           distance.exe
+|           error-handling.cpp
+|           error-handling.exe
+|           error-hw.cpp
+|           stack-error.cpp
+|           stack-error.exe
 |
-+---Lab-1
-|       car.cpp
-|       car.exe
-|       dog.cpp
-|       dog.exe
-|       Student.cpp
-|
-+---Lab-2
-|       DefaultArgument.cpp
-|       DefaultArgument.exe
-|       enum.cpp
-|       enum.exe
-|       FunctionOverLoading.cpp
-|       FunctionOverLoading.exe
-|       InlineFunction.cpp
-|       InlineFunction.exe
-|       Manipulator.cpp
-|       Manipulator.exe
-|
-+---Lab-3
-|       BankAccount.cpp
-|       BankAccount.exe
-|       Time.cpp
-|       Time.exe
-|
-+---Lab-4
-|       weight.cpp
-|       weight.exe
-|
-\---Lab-5
-        complexnumber.cpp
-        complexnumber.exe
-        complexwithfriend.cpp
-        complexwithfriend.exe
-        relationaloperator.cpp
-        relationaloperator.exe
-
+\---Lab
+    +---Lab-1
+    |       car.cpp
+    |       car.exe
+    |       dog.cpp
+    |       dog.exe
+    |       Student.cpp
+    |
+    +---Lab-2
+    |       DefaultArgument.cpp
+    |       DefaultArgument.exe
+    |       enum.cpp
+    |       enum.exe
+    |       FunctionOverLoading.cpp
+    |       FunctionOverLoading.exe
+    |       InlineFunction.cpp
+    |       InlineFunction.exe
+    |       Manipulator.cpp
+    |       Manipulator.exe
+    |
+    +---Lab-3
+    |       BankAccount.cpp
+    |       BankAccount.exe
+    |       Time.cpp
+    |       Time.exe
+    |
+    +---Lab-4
+    |       weight.cpp
+    |       weight.exe
+    |
+    +---Lab-5
+    |       complexnumber.cpp
+    |       complexnumber.exe
+    |       complexwithfriend.cpp
+    |       complexwithfriend.exe
+    |       relationaloperator.cpp
+    |       relationaloperator.exe
+    |
+    +---Lab-6
+    |       Basic-UD.cpp
+    |       Basic-UD.exe
+    |       dateconversion.cpp
+    |       dateconversion.exe
+    |       FunctionOverriding.cpp
+    |       FunctionOverriding.exe
+    |       inheritance.exe
+    |       radian.cpp
+    |       radian.exe
+    |       timeconversion.cpp
+    |       timeconversion.exe
+    |
+    \---Lab-7
+            publication.cpp
+            publication.exe
+            publictaion.exe
+            Shape.cpp
+            Shape.exe
