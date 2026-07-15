@@ -27,87 +27,95 @@ The Classworks are organized sequentially by topic/week:
 
 
 The labs are organized sequentially by topic/week:
+### 📂 Project Structure
 
 ```text
-|
-+---class-works
-|   +---Assignments
-|   |   +---Questions
-|   |   |       Overload-usingMemberFunction.cpp
-|   |   |       Overload-usingMemberFunction.exe
-|   |   |       Overloading-usingFriendFunction.cpp
-|   |   |       Overloading-usingFriendFunction.exe
-|   |   |
-|   |   \---Tutorials
-|   |       \---Tutorial-1
-|   |               Qn1.txt
-|   |               Qn2.cpp
-|   |               Qn2.exe
-|   |               Qn3.cpp
-|   |               Qn3.exe
-|   |               Qn4.txt
-|   |
-|   +---Week-1
-|   |       Default_argument.cpp
-|   |       overloading_function.cpp
-|   |       thispointer.cpp
-|   |
-|   +---Week-2
-|   |       Default_Constructor.cpp
-|   |       Destructor.cpp
-|   |       PassByReference.cpp
-|   |       Qn.cpp
-|   |
-|   +---Week-3
-|   |       Copy_Constructor.cpp
-|   |       distance.cpp
-|   |       DynamicMemoryAllocation.cpp
-|   |       FriendFunction.cpp
-|   |       price.cpp
-|   |       uniquepointer.cpp
-|   |       weight.cpp
-|   |
-|   \---Week-4
-|           operatordefine.cpp
-|           timeOperatordefine.cpp
-|           typeconversion.cpp
-|           typeconversionclass.cpp
-|           xor.cpp
-|
-+---Lab-1
-|       car.cpp
-|       car.exe
-|       dog.cpp
-|       dog.exe
-|       Student.cpp
-|
-+---Lab-2
-|       DefaultArgument.cpp
-|       DefaultArgument.exe
-|       enum.cpp
-|       enum.exe
-|       FunctionOverLoading.cpp
-|       FunctionOverLoading.exe
-|       InlineFunction.cpp
-|       InlineFunction.exe
-|       Manipulator.cpp
-|       Manipulator.exe
-|
-+---Lab-3
-|       BankAccount.cpp
-|       BankAccount.exe
-|       Time.cpp
-|       Time.exe
-|
-+---Lab-4
-|       weight.cpp
-|       weight.exe
-|
-\---Lab-5
-        complexnumber.cpp
-        complexnumber.exe
-        complexwithfriend.cpp
-        complexwithfriend.exe
-        relationaloperator.cpp
-        relationaloperator.exe
-
+.
+├── 📂 Assignments
+│   ├── 📂 Questions
+│   │   ├── 📄 Overload-usingMemberFunction.cpp
+│   │   └── 📄 Overloading-usingFriendFunction.cpp
+│   └── 📂 Tutorials
+│       └── 📂 Tutorial-1
+│           ├── 📄 Qn1.txt
+│           ├── 📄 Qn2.cpp
+│           ├── 📄 Qn3.cpp
+│           └── 📄 Qn4.txt
+│
+├── 📂 class-works
+│   ├── 📂 Week-1
+│   │   ├── 📄 Default_argument.cpp
+│   │   ├── 📄 overloading_function.cpp
+│   │   └── 📄 thispointer.cpp
+│   ├── 📂 Week-2
+│   │   ├── 📄 Default_Constructor.cpp
+│   │   ├── 📄 Destructor.cpp
+│   │   ├── 📄 PassByReference.cpp
+│   │   └── 📄 Qn.cpp
+│   ├── 📂 Week-3
+│   │   ├── 📄 Copy_Constructor.cpp
+│   │   ├── 📄 distance.cpp
+│   │   ├── 📄 DynamicMemoryAllocation.cpp
+│   │   ├── 📄 FriendFunction.cpp
+│   │   ├── 📄 price.cpp
+│   │   ├── 📄 uniquepointer.cpp
+│   │   └── 📄 weight.cpp
+│   ├── 📂 Week-4
+│   │   ├── 📄 operatordefine.cpp
+│   │   ├── 📄 timeOperatordefine.cpp
+│   │   ├── 📄 typeconversion.cpp
+│   │   ├── 📄 typeconversionclass.cpp
+│   │   └── 📄 xor.cpp
+│   ├── 📂 Week-5
+│   │   ├── 📄 employee.cpp
+│   │   ├── 📄 inheritance.cpp
+│   │   ├── 📄 MoneyConversion.cpp
+│   │   ├── 📄 name.cpp
+│   │   ├── 📄 Question.cpp
+│   │   ├── 📄 sourceClass.cpp
+│   │   └── 📄 user.cpp
+│   ├── 📂 Week-6
+│   │   ├── 📄 dynamic-binding.cpp
+│   │   ├── 📄 shape.cpp
+│   │   ├── 📄 static-binding.cpp
+│   │   └── 📄 user.cpp
+│   ├── 📂 Week-7
+│   │   ├── 📄 crickter.cpp
+│   │   ├── 📄 dynamic_casting.cpp
+│   │   └── 📄 namejoin.cpp
+│   └── 📂 Week-8
+│       ├── 📄 class-stack.cpp
+│       ├── 📄 distance.cpp
+│       ├── 📄 error-handling.cpp
+│       ├── 📄 error-hw.cpp
+│       └── 📄 stack-error.cpp
+│
+└── 📂 Lab
+    ├── 📂 Lab-1
+    │   ├── 📄 car.cpp
+    │   ├── 📄 dog.cpp
+    │   └── 📄 Student.cpp
+    ├── 📂 Lab-2
+    │   ├── 📄 DefaultArgument.cpp
+    │   ├── 📄 enum.cpp
+    │   ├── 📄 FunctionOverLoading.cpp
+    │   ├── 📄 InlineFunction.cpp
+    │   └── 📄 Manipulator.cpp
+    ├── 📂 Lab-3
+    │   ├── 📄 BankAccount.cpp
+    │   └── 📄 Time.cpp
+    ├── 📂 Lab-4
+    │   └── 📄 weight.cpp
+    ├── 📂 Lab-5
+    │   ├── 📄 complexnumber.cpp
+    │   ├── 📄 complexwithfriend.cpp
+    │   └── 📄 relationaloperator.cpp
+    ├── 📂 Lab-6
+    │   ├── 📄 Basic-UD.cpp
+    │   ├── 📄 dateconversion.cpp
+    │   ├── 📄 FunctionOverriding.cpp
+    │   ├── 📄 radian.cpp
+    │   └── 📄 timeconversion.cpp
+    └── 📂 Lab-7
+        ├── 📄 publication.cpp
+        └── 📄 Shape.cpp
