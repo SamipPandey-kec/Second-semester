@@ -11,7 +11,7 @@ void Printe(int a){
     }
 
     cout<<endl;
-    
+
     for (int i=1;i<=a;i++){
     cout<<char(i+'A')<<" ";
 
