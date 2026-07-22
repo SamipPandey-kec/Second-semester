@@ -30,8 +30,10 @@ int main(){
     // x.show();
 
     int x=10;
-    der1 obj(x,'a');
-    obj.show();
+    der1<char> obj1(x,'a');
+    obj1.show();
+    der1<string> obj2(x,"samip");
+    obj2.show();
 
     return 0;
 }
